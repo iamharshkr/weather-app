@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $zipCode = $Ipzip;
     }
-    $apiKey = 'd550a6722093b58246518e9c92eb0678';
+    $apiKey = '#apiKey';
     $baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip={$zipCode},{$countryCode}&appid={$apiKey}&units=metric";
     $result = cURl($baseUrl);
     $result = json_decode($result, true);
